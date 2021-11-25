@@ -6,35 +6,111 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
     
 </head>
-<body>
-    
-</body>
-</html>
-
 
 <body>
     <div class="calculator">
-        <div id="output"></div>
-        <button class="btn" onclick="addToSum('1')">1</button>
-        <button class="btn" onclick="addToSum('2')">2</button>
-        <button class="btn" onclick="addToSum('3')">3</button>
-        <button class="btn" onclick="addToSum('4')">4</button>
-        <button class="btn" onclick="addToSum('5')">5</button>
-        <button class="btn" onclick="addToSum('6')">6</button>
-        <button class="btn" onclick="addToSum('7')">7</button>
-        <button class="btn" onclick="addToSum('8')">8</button>
-        <button class="btn" onclick="addToSum('9')">9</button>
-        <button class="btn" onclick="addToSum('0')">0</button>
-        <button class="btn" onclick="addToSum('*')">*</button>
-        <button class="btn" onclick="addToSum('-')">-</button>
-        <button class="btn" onclick="addToSum('+')">+</button>
-        <button class="btn" onclick="addToSum('/')">/</button>
-        <button class="btn" onclick="addToSum('.')">.</button>
-        <button class="btn" onclick="evaluateSum()">=</button>
-        <button class="btn" onclick="ClearSum()">Clear</button>
+        <div class='row'>
+            <!-- <form class='form-group-lg form-inline' onsubmit='return false'>
+              <input type='text' id='output' class='focusedInput form-control'>
+              <button class='btn btn-warning btn-lg' onclick="ClearSum()">Clear</button>
+            </form> -->
+            <div id="output" class='form-group-lg form-inline'>
+            
+            </div>
+          </div>
+
+        <!-- <div id="output">
+            
+        </div> -->
+        <div class="row">
+            <div class='col-xs-1 col-xs-offset-4'>
+                <button class="btn btn-lg btn-secondary" onclick="addToSum('7')">7</button>
+            </div>
+            <div class='col-xs-1'>
+                <button class='btn btn-lg btn-secondary' onclick="addToSum('8')">8</button>
+            </div>
+            <div class='col-xs-1'>
+                <button class='btn btn-lg btn-secondary' onclick="addToSum('9')">9</button>
+            </div>
+            <div class='col-xs-1'>
+                <button class='btn btn-lg btn-primary'   onclick="addToSum('+')">+</button>
+            </div>
+        </div>
+
+            <div class='row'>
+                <div class='col-xs-1 col-xs-offset-4'>
+                    <button class='btn btn-lg btn-secondary' onclick="addToSum('4')">4</button>
+                </div>
+                <div class='col-xs-1'>
+                    <button class='btn btn-lg btn-secondary' onclick="addToSum('5')">5</button>
+                </div>
+                <div class='col-xs-1'>
+                    <button class='btn btn-lg btn-secondary' onclick="addToSum('6')">6</button>
+                </div>
+                <div class='col-xs-1'>
+                    <button class='btn btn-lg btn-primary'   onclick="addToSum('-')">-</button>
+                </div>
+         </div> <!--row-->
+
+        <div class='row'>
+                <div class='col-xs-1 col-xs-offset-4'>
+                    <button class='btn btn-lg btn-secondary' onclick="addToSum('1')">1</button>
+                </div>
+                <div class='col-xs-1'>
+                    <button class='btn btn-lg btn-secondary' onclick="addToSum('2')">2</button>
+                </div>
+                <div class='col-xs-1'>
+                    <button class='btn btn-lg btn-secondary' onclick="addToSum('3')">3</button>
+                </div>
+                <div class='col-xs-1'>
+                    <button class='btn btn-lg btn-primary' onclick="addToSum('*')">*</button>
+                </div>
+        </div>
+
+        <div class='row'> <!--row-->
+            <div class='col-xs-1 col-xs-offset-4'>
+                <button class='btn btn-lg btn-primary' onclick="addToSum('0')">0</button>
+            </div>
+            <div class='col-xs-1'>
+                <button class='btn btn-lg btn-primary' onclick="addToSum('.')">.</button>
+            </div>
+            <div class='col-xs-1'>
+                <button class='btn btn-lg btn-primary' onclick="evaluateSum()">=</button>
+            </div>
+            <div class='col-xs-1'>
+                <button class='btn btn-lg btn-primary' onclick="addToSum('/')">/</button>
+            </div>
+        </div>
+        <div class='col-xs-1'>
+            <button class='btn btn-warning btn-lg' onclick="ClearSum()">Clear</button>
+        </div>
+        
+
+
+
+        <!-- <button class="btn btn-lg btn-secondary" onclick="addToSum('1')">1</button>
+        <button class="btn btn-lg btn-secondary" onclick="addToSum('2')">2</button>
+        <button class="btn btn-lg btn-secondary" onclick="addToSum('3')">3</button> -->
+        <!-- <button class="btn btn-lg btn-secondary" onclick="addToSum('4')">4</button>
+        <button class="btn btn-lg btn-secondary" onclick="addToSum('5')">5</button>
+        <button class="btn btn-lg btn-secondary" onclick="addToSum('6')">6</button> -->
+        
+        <!-- <button class="btn btn-lg btn-secondary" onclick="addToSum('8')">8</button> -->
+        <!-- <button class="btn btn-lg btn-secondary" onclick="addToSum('9')">9</button> -->
+        <!-- <button class="btn btn-lg btn-secondary" onclick="addToSum('0')">0</button> -->
+        <!-- <button class="btn btn-lg btn-primary" onclick="addToSum('*')">*</button>
+        <button class="btn btn-lg btn-primary" onclick="addToSum('-')">-</button>
+        <button class="btn btn-lg btn-primary" onclick="addToSum('+')">+</button> -->
+        <!-- <button class="btn btn-lg btn-primary" onclick="addToSum('/')">/</button> -->
+        <!-- <button class="btn btn-lg btn-primary" onclick="addToSum('.')">.</button> -->
+        <!-- <button class="btn btn-lg btn-primary" onclick="evaluateSum()">=</button>  -->
+        <!-- <button class="btn btn-lg btn-warning" onclick="ClearSum()">Clear</button> -->
     </div>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
